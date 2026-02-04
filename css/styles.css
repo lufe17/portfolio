@@ -1,0 +1,512 @@
+/***** 
+-- CSS Variables 
+*****/
+:root {
+    /* -- Custom Colors -- */
+    --color-primary: #4397A4;
+    --color-secondary: #486A6F;
+    --color-tertiary: #678C92;
+    --color-light: #C6DBFF;
+    --color-background: #F4F7FF;
+    --color-5BCCDE: #5BCCDE;
+
+    /* -- Custom Fonts -- */
+    --font-family: 'Noto Sans', sans-serif;
+
+    /* -- Custom Font Sizes -- */
+    --font-size-16: 16px;
+    --font-size-22: 22px;
+    --font-size-24: 24px;
+    --font-size-36: 36px;
+    --font-size-64: 64px;
+
+    /* -- Custom Spacing -- */
+    --space-10: 10px;
+    --space-15: 15px;
+    --space-19: 19px;
+    --space-20: 20px;
+    --space-26: 26px;
+    --space-29: 29px;
+    --space-30: 30px;
+    --space-39: 39px;
+    --space-40: 40px;
+    --space-50: 50px;
+    --space-53: 53px;
+    --space-80: 80px;
+    --space-106: 106px;
+    --space-108: 108px;
+    --space-120: 120px;
+    --space-126: 126px;
+    --space-139: 139px;
+
+    /* -- Custom Widths -- */
+    --width-70: 70px;
+    --width-141: 141px;
+    --width-160: 160px;
+    --width-249: 249px;
+    --width-342: 342px;
+    --width-128: 128px;
+    --width-208: 208px;
+    --width-209: 209px;
+    --width-368: 368px;
+    --width-51: 51px;
+    --width-60: 60px;
+    --width-217: 217px;
+    --width-78: 78px;
+    --width-95: 95px;
+    --width-500: 500px;
+    --width-800: 800px;
+
+    /* -- Custom Font Weights -- */
+    --font-weight-normal: normal;
+    --font-weight-bold: 800;
+    --font-weight-medium: 500;
+    --font-weight-extra-bold: 900;
+
+    /* -- Custom Line Heights -- */
+    --line-height-16: 24px;
+    --line-height-22: 32px;
+    --line-height-24: 32px;
+    --line-height-36: 48px;
+    --line-height-64: 72px;
+    --line-height-44: 44px;
+
+    /* -- Custom Letter Spacing -- */
+    --letter-spacing-0: 0;
+    --letter-spacing-1: 0.5px;
+}
+
+/***** 
+-- Custom Fonts 
+*****/
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('../../../portfolio/assets/fonts/Noto_Sans/static/NotoSans-Regular.ttf') format('truetype'),
+         url('../../../portfolio/assets/fonts/Noto_Sans/static/NotoSans-Bold.ttf') format('truetype'),
+         url('../../../portfolio/assets/fonts/Noto_Sans/static/NotoSans-Medium.ttf') format('truetype');
+    font-weight: var(--font-weight-normal);
+    font-style: normal;
+}
+
+.noto-sans-16 {
+    font-family: var(--font-family);
+}
+
+/***** 
+-- Reset default spacing 
+*****/
+h1, h2, h3, h4, h5, h6, p, b, span {
+    padding: 0;
+    margin: 0;
+}
+
+/***** 
+-- Heading 
+*****/
+h1 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-64);
+    line-height: var(--line-height-64);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-0);
+}
+
+h2 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-36);
+    line-height: var(--line-height-36);
+    font-weight: var(--font-weight-bold);
+    letter-spacing: var(--letter-spacing-0);
+}
+
+h3 {
+    font-family: var(--font-family);
+    font-size: var(--font-size-24);
+    line-height: var(--line-height-44);
+    font-weight: var(--font-weight-extra-bold);
+    letter-spacing: var(--letter-spacing-0);
+    color: var(--color-secondary);
+}
+
+p {
+    font-family: var(--font-family);
+    font-size: var(--font-size-22);
+    line-height: var(--line-height-22);
+    color: var(--color-tertiary);
+}
+
+span {
+    font-family: var(--font-family);
+    font-size: var(--font-size-16);
+    line-height: var(--line-height-22);
+    font-weight: var(--font-weight-medium);
+    color: var(--color-tertiary);
+}
+
+span b {
+    color: var(--color-5BCCDE);
+    font-weight: 500;
+}
+
+
+/***** 
+-- Custom Colors 
+*****/
+.fc-678C92 {
+    color: var(--color-tertiary);
+}
+
+.fc-4a7277 {
+    color: var(--color-secondary);
+}
+
+/***** 
+-- Custom Background Colors 
+*****/
+.bg-F4F7FF {
+    background: var(--color-background);
+}
+
+/***** 
+-- Custom font size 
+*****/
+.fs-16 {
+    font-size: var(--font-size-16);
+}
+
+.fs-64 {
+    font-size: var(--font-size-64);
+}
+
+/***** 
+-- Custom width 
+*****/
+.w-208 {
+    width: var(--width-208);
+}
+.w-500 {
+    width: var(--width-500);
+}
+
+.w-141px {
+    width: var(--width-141);
+}
+
+.w-160 {
+    width: var(--width-160);
+}
+
+.w-249 {
+    width: var(--width-249);
+}
+
+.w-128 {
+    width: var(--width-128);
+}
+
+.w-342 {
+    width: var(--width-342);
+}
+
+.w-209 {
+    width: var(--width-209);
+}
+
+.w-70 {
+    width: var(--width-70);
+}
+
+.w-368 {
+    width: var(--width-368);
+}
+
+.w-51 {
+    width: var(--width-51);
+}
+
+.w-60 {
+    width: var(--width-60);
+}
+
+.w-217 {
+    width: var(--width-217);
+}
+
+.w-78 {
+    width: var(--width-78);
+}
+
+.w-95 {
+    width: var(--width-95);
+}
+
+.w-800 {
+    width: var(--width-800);
+}
+
+/***** 
+-- Buttons 
+*****/
+.button-1 {
+    background: linear-gradient(0deg, var(--color-primary) 0%, var(--color-primary) 100%);
+    border-radius: 5px;
+    border: none;
+    color: #FFFFFF;
+    line-height: var(--line-height-22);
+    padding: var(--space-10) 25px;
+}
+
+.button-2 {
+    background: linear-gradient(0deg, var(--color-primary) 0%, var(--color-primary) 100%);
+    border-radius: 55px;
+    border: none;
+    color: #FFFFFF;
+    line-height: var(--line-height-22);
+    padding: var(--space-19) 33px;
+    font-weight: var(--font-weight-bold);
+}
+
+.button-3 {
+    background: var(--color-light);
+    border-radius: 55px;
+    border: none;
+    color: var(--color-secondary);
+    line-height: var(--line-height-22);
+    padding: var(--space-19) 41px var(--space-19) 42px;
+    font-weight: var(--font-weight-bold);
+}
+
+.button-sec-2 {
+    background: linear-gradient(0deg, var(--color-primary) 0%, var(--color-primary) 100%);
+    border-radius: 55px;
+    border: none;
+    color: #FFFFFF;
+    line-height: var(--line-height-22);
+    padding: var(--space-15) 39px;
+    font-weight: var(--font-weight-bold); 
+}
+
+/***** 
+-- Custom Gaps 
+*****/
+.gap-15 {
+    gap: var(--space-15);
+}
+
+.gap-20 {
+    gap: var(--space-20);
+}
+
+.gap-30 {
+    gap: var(--space-30)
+}
+
+.gap-33 {
+    gap: 33.66px;
+}
+
+.gap-39 {
+    gap: var(--space-39);
+}
+
+.gap-40 {
+    gap: var(--space-40);
+}
+
+.gap-50 {
+    gap: var(--space-50)
+}
+
+.gap-80 {
+    gap: var(--space-80);
+}
+
+.gap-100 {
+    gap: var(--space-80);
+}
+
+.gap-106 {
+    gap: var(--space-106)
+}
+
+
+
+
+/***** 
+-- Custom Padding 
+*****/
+.pt-20 {
+    padding-top: var(--space-20);
+}
+
+.pb-20 {
+    padding-bottom: var(--space-20);
+}
+
+.pl-20 {
+    padding-left: var(--space-20);
+}
+
+.pl-22 {
+    padding-left: 22px;
+}
+
+.pt-26 {
+    padding-top: 26px;
+}
+
+.pb-26 {
+    padding-bottom: 26px;
+}
+
+.ptb-39 {
+    padding: var(--space-39) 0;
+}
+
+.pb-40 {
+    padding-bottom: var(--space-40);
+}
+
+.pr-40 {
+    padding-right: var(--space-40);
+}
+
+.pr-53 {
+    padding-right: var(--space-53);
+}
+
+.pl-53 {
+    padding-left: var(--space-53);
+}
+
+.pt-92 {
+    padding-top: 92px;
+}
+
+.pt-108 {
+    padding-top: var(--space-108);
+}
+
+.pt-120 {
+    padding-top: var(--space-120);
+}
+
+.pb-120 {
+    padding-bottom: var(--space-120);
+}
+
+.pb-126 {
+    padding-bottom: var(--space-126);
+}
+
+.pt-128 {
+    padding-top: var(--space-120);
+}
+
+.pb-128 {
+    padding-bottom: var(--space-120);
+}
+
+.pb-139 {
+    padding-bottom: var(--space-139);
+}
+
+
+/* Margins */
+.mb-20 {
+    margin-bottom: var(--space-20);
+}
+
+.mb-40 {
+    margin-bottom: var(--space-40);
+}
+
+.mt-115 {
+    margin-top: -115px;
+}
+
+
+
+
+/* Main Wrapper */
+.main-wrapper {
+    width: 100%;
+}
+
+.section-max-width {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+
+/* NAV */
+
+.sticky-header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    background: transparent;
+}
+
+.nav-height {
+    height: 115px;
+}
+
+/* Header Section */
+.pt-175 {
+    padding-top: 175px;
+}
+
+/* Flexbox Utility */
+.d-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.d-flex.justify-content-between {
+    justify-content: space-between;
+}
+
+.d-flex.justify-content-start {
+    justify-content: flex-start;
+}
+
+.d-flex.justify-content-end {
+    justify-content: flex-end;
+}
+
+.d-flex.align-items-center {
+    align-items: center;
+}
+
+.d-flex.align-items-start {
+    align-items: flex-start;
+}
+
+.d-flex.align-items-end {
+    align-items: flex-end;
+}
+
+
+
+/* Adjustments for widths */
+.w-auto {
+    width: auto !important;
+}
+
+/* Second section */
+.on-hover-sec-2-bg {
+    background-image: url("../assets/img/Rectangle\ 616.png");
+    
+}
+.on-hover {
+    padding: 20px 20px 20px 20px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 208px;
+    height: 300px;
+    background-position: center;
+}
