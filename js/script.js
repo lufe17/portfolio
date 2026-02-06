@@ -10,3 +10,16 @@ document.addEventListener("scroll", function () {
 });
 
 //PORTFOLIO SLIDER
+jQuery( function($) {
+   $(document).ready( function() {
+	   $('.project-slider').slick({
+		  infinite: false,
+		  slidesToShow: 4,
+		  slidesToScroll: 4,
+		  arrows: true,
+          rows: 2,
+		  nextArrow: '<div class="next-arrow"><img src="../../portfolio/assets/img/next-arrow.svg" alt="Next Arrow"></div>',
+    	  prevArrow: '<div class="prev-arrow"><img src="../../portfolio/assets/img/prev-arrow.svg" alt="Prev Arrow"></div>',
+		});
+   });
+});
