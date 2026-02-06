@@ -562,6 +562,11 @@ p {
 }
 
 @media screen and (max-width: 576px) {
+	.navbar-brand img {
+		width: 80px;
+		object-fit: contain;
+	}
+
 	.section1 h1 {
 		font-size: 45px;
 	}
@@ -619,5 +624,9 @@ p {
 
 	.timeline:before {
 		margin-left: 2px;
+	}
+
+	.footer-logo {
+		width: 100px;
 	}
 }
