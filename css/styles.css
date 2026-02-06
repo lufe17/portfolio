@@ -212,12 +212,6 @@ p {
 	height: 65px;
 }
 
-.navbar-brand img {
-	width: 120px;
-	object-fit: contain;
-	object-position: left;
-}
-
 /*SECTION 1*/
 .section1 {
 	padding: 170px 0 110px;
@@ -479,10 +473,6 @@ p {
 /*FOOTER*/
 .footer-sec {
 	background-color: var(--color-secondary);
-}
-
-.footer-logo {
-	width: 133px;
 }
 
 .footer-icon {
